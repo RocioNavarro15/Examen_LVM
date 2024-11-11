@@ -1,0 +1,31 @@
+    1  sudo apt update && sudo apt upgrade
+    2  sudo su
+    3  su
+    4  sudo apt update && sudo apt upgrade
+    5  clear
+    6  lsmod | grep vboxguest
+    7  sudo apt install bzip 2
+    8  sudo apt-get install dkms
+    9  sudo apt install bzip2
+   10  ls /mnt
+   11  sudo umount /mnt
+   12  sudo mount /dev/cdrom /mnt
+   13  ls /media
+   14  sudo /mnt/VBoxLinuxAdditions.run
+   15  lsbk
+   16  lsblk
+   17  sudo fdisk /dev/sdc
+   18  sudo fdisk /dev/sdd
+   19  sudo fdisk /dev/sdb
+   20  lsblk
+   21  sudo pvcreate /dev/sdc1 /dev/sdd1 /dev/sdb1
+   22  sudo apt update
+   23  sudo apt install lvm2
+   24  lsblk
+   25  sudo pvcreate /dev/sdc1 /dev/sdd1 /dev/sdb1
+   26  sudo vgcreate datos /dev/sdc1 /dev/sdd1 /dev/sdb1
+   27  sudo lvcreate -n www -L 1GB datos
+   28  sudo lvcreate -n salvas -L 4GB datos
+   29  lsblk
+   30  sudo lvextend -L 2GB /dev/datos/www
+   31  history > history.txt
